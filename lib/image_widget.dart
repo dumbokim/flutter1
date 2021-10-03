@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'material.dart';
 import 'screens/book_list.dart';
+import 'screens/test_page.dart';
 
 class ImageWidgetApp extends StatefulWidget {
   // ImageWidgetApp({Key? key}) : super(key: key);
@@ -68,7 +69,7 @@ class _ImageWidgetAppState extends State<ImageWidgetApp>
   }
 
   List<Widget> _widgetOptions = [
-    Placeholder(color: Colors.blue),
+    TestPage(),
     Placeholder(color: Colors.green),
     MaterialFlutterApp(),
     Placeholder(color: Colors.red),
@@ -87,36 +88,36 @@ class _ImageWidgetAppState extends State<ImageWidgetApp>
           elevation: 0,
         ),
         floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
-        floatingActionButton: Container(
-          margin: EdgeInsets.only(top: 40),
-          width: 80,
-          height: 80,
-          child: FittedBox(
-            child: FloatingActionButton(
-              child: Icon(Icons.local_shipping, size: 33),
-              backgroundColor: Colors.amber[800],
-              elevation: 0,
-              // tooltip: 'Inc',
-              onPressed: () {
-                print('clicked');
-                setState(() {
-                  controller!.index = 2;
-                });
-                // if (mounted) {
-                //   setState(() {
-                //     if (_tempColor == Colors.blue) {
-                //       _tempColor = Colors.red;
-                //       _tempImg = 'images/img2.png';
-                //     } else {
-                //       _tempColor = Colors.blue;
-                //       _tempImg = 'images/img1.png';
-                //     }
-                //   });
-                // }
-              },
-            ),
-          ),
-        ),
+        // floatingActionButton: Container(
+        //   margin: EdgeInsets.only(top: 40),
+        //   width: 80,
+        //   height: 80,
+        //   child: FittedBox(
+        //     child: FloatingActionButton(
+        //       child: Icon(Icons.local_shipping, size: 33),
+        //       backgroundColor: Colors.amber[800],
+        //       elevation: 0,
+        //       // tooltip: 'Inc',
+        //       onPressed: () {
+        //         print('clicked');
+        //         setState(() {
+        //           controller!.index = 2;
+        //         });
+        //         // if (mounted) {
+        //         //   setState(() {
+        //         //     if (_tempColor == Colors.blue) {
+        //         //       _tempColor = Colors.red;
+        //         //       _tempImg = 'images/img2.png';
+        //         //     } else {
+        //         //       _tempColor = Colors.blue;
+        //         //       _tempImg = 'images/img1.png';
+        //         //     }
+        //         //   });
+        //         // }
+        //       },
+        //     ),
+        //   ),
+        // ),
         bottomNavigationBar: TabBar(
           tabs: [
             Tab(

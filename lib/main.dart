@@ -23,36 +23,3 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-
-class MaterialFlutterApp extends StatefulWidget {
-  @override
-  State<StatefulWidget> createState() {
-    return _MaterialFlutterAppState();
-  }
-}
-
-class _MaterialFlutterAppState extends State<MaterialFlutterApp> {
-  @override
-  void initState() {
-    super.initState();
-  }
-  
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: Text('Mat Design App')),
-      floatingActionButton:
-          FloatingActionButton(child: Icon(Icons.add_alarm), onPressed: () {}),
-      body: Container(
-          child: Center(
-        child: Column(
-          children: <Widget>[
-            Icon(Icons.android_rounded),
-            Text('android'),
-          ],
-          mainAxisAlignment: MainAxisAlignment.center,
-        ),
-      )),
-    );
-  }
-}
